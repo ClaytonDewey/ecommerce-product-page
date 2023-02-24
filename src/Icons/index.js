@@ -1,4 +1,9 @@
-// export { default as IconCopy } from './copy';
-// export { default as Icon } from './icon';
-// export { default as IconCheck } from './check';
-// export { default as IconArrowRight } from './arrow-right';
+export { default as IconCart } from './cart';
+export { default as IconClose } from './close';
+export { default as IconDelete } from './delete';
+export { default as Icon } from './icon';
+export { default as IconMenu } from './menu';
+export { default as IconMinus } from './minus';
+export { default as IconNext } from './next';
+export { default as IconPlus } from './plus';
+export { default as IconPrevious } from './previous';
