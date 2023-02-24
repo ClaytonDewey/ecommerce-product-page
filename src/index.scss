@@ -19,18 +19,16 @@ The designs were created to the following widths:
 @import './sass/base/base';
 @import './sass/layout/footer';
 
-svg {
-  fill: $brand;
-  stroke: $brand;
-}
-
 .product-images-slider {
-  max-width: 50rem;
+  max-width: 44.5rem;
   height: auto;
+  margin-bottom: 3rem;
+
   .swiper-slide {
     padding-top: 100%;
     overflow: hidden;
     position: relative;
+    border-radius: 2rem;
 
     img {
       position: absolute;
@@ -58,13 +56,20 @@ svg {
 }
 
 .product-images-slider-thumbs {
-  max-width: 500px;
+  max-width: 44.5rem;
+
   .swiper-slide {
     cursor: pointer;
     border: 1px solid #ddddbd;
+    border-radius: 1rem;
+    max-width: 8.9rem;
 
     &-thumb-active {
       border-color: #ff0000;
+
+      img {
+        opacity: 0.65;
+      }
     }
   }
 
@@ -82,14 +87,19 @@ svg {
       border-radius: 1rem;
     }
   }
+
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
-
 .img-responsive,
-.thumbnail>img,
-.thumbnail a>img,
-.carousel-inner>.item>img,
-.carousel-inner>.item>a>img {
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
   display: block;
   max-width: 100%;
   height: auto;
