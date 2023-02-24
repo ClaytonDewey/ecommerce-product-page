@@ -19,8 +19,7 @@ const ImageSlider: React.FC<ImageSliderProps> = () => {
         thumbs={{
           swiper: activeThumb && !activeThumb.destroyed ? activeThumb : null,
         }}
-        className='product-images-slider'
-      >
+        className='product-images-slider'>
         {productImages.map((image, idx) => {
           return (
             <SwiperSlide key={idx}>
@@ -32,11 +31,9 @@ const ImageSlider: React.FC<ImageSliderProps> = () => {
       <Swiper
         onSwiper={setActiveThumb}
         loop={true}
-        spaceBetween={10}
         slidesPerView={4}
         modules={[Navigation, Thumbs]}
-        className='product-images-slider-thumbs'
-      >
+        className='product-images-slider-thumbs'>
         {productImages.map((image, idx) => {
           return (
             <SwiperSlide key={idx}>
