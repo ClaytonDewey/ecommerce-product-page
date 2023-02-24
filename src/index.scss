@@ -19,6 +19,65 @@ The designs were created to the following widths:
 @import './sass/base/base';
 @import './sass/layout/footer';
 
+.product-images-slider {
+  max-width: 50rem;
+  height: auto;
+  .swiper-slide {
+    padding-top: 100%;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    cursor: pointer;
+    position: absolute;
+    color: $black;
+  }
+
+  .swiper-button-prev {
+    left: 0;
+  }
+
+  .swiper-button-next {
+    right: 0;
+  }
+}
+
+.product-images-slider-thumbs {
+  max-width: 500px;
+  .swiper-slide {
+    cursor: pointer;
+    border: 1px solid #ddddbd;
+
+    &-thumb-active {
+      border-color: #ff0000;
+    }
+  }
+
+  &-wrapper {
+    width: 100%;
+    padding-top: 100%;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+
 .img-responsive,
 .thumbnail>img,
 .thumbnail a>img,
