@@ -19,6 +19,11 @@ The designs were created to the following widths:
 @import './sass/base/base';
 @import './sass/layout/footer';
 
+svg {
+  fill: $brand;
+  stroke: $brand;
+}
+
 .product-images-slider {
   max-width: 50rem;
   height: auto;
