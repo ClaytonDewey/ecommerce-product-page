@@ -1,4 +1,6 @@
-const IconMenu = () => {
+import React from 'react';
+
+const IconMenu: React.FC = () => {
   return (
     <svg width='16' height='15' xmlns='http://www.w3.org/2000/svg'>
       <path

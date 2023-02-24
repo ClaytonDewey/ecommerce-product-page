@@ -1,4 +1,6 @@
-const IconNext = () => {
+import React from 'react';
+
+const IconNext: React.FC = () => {
   return (
     <svg width='13' height='18' xmlns='http://www.w3.org/2000/svg'>
       <path
@@ -11,5 +13,4 @@ const IconNext = () => {
     </svg>
   );
 };
-
 export default IconNext;

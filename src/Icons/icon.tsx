@@ -1,15 +1,18 @@
-import {
-  IconCart,
-  IconClose,
-  IconDelete,
-  IconMenu,
-  IconMinus,
-  IconNext,
-  IconPlus,
-  IconPrevious,
-} from './index';
+import React from 'react';
+import IconCart from './cart';
+import IconClose from './close';
+import IconDelete from './delete';
+import IconMenu from './menu';
+import IconMinus from './minus';
+import IconNext from './next';
+import IconPlus from './plus';
+import IconPrevious from './previous';
 
-const Icon = ({ name }) => {
+type IconProps = {
+  name: string;
+};
+
+const Icon: React.FC<IconProps> = ({ name }) => {
   switch (name) {
     case 'cart':
       return <IconCart />;
@@ -31,5 +34,4 @@ const Icon = ({ name }) => {
       return <IconCart />;
   }
 };
-
 export default Icon;

@@ -1,4 +1,6 @@
-const IconCart = () => {
+import React from 'react';
+
+const IconCart: React.FC = () => {
   return (
     <svg width='22' height='20' xmlns='http://www.w3.org/2000/svg'>
       <path
@@ -8,5 +10,4 @@ const IconCart = () => {
     </svg>
   );
 };
-
 export default IconCart;
