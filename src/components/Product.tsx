@@ -1,4 +1,5 @@
 import React from 'react';
+import { IconCart } from '../Icons';
 import Button from './Button';
 
 type ProductProps = {};
@@ -10,7 +11,7 @@ const Product: React.FC<ProductProps> = () => {
       Sneakers These low-profile sneakers are your perfect casual wear
       companion. Featuring a durable rubber outer sole, they'll withstand
       everything the weather can offer. $125.00 50% $250.00 0 Add to cart
-      <Button text='Add to cart' />
+      <Button icon={<IconCart />} text='Add to cart' />
     </div>
   );
 };

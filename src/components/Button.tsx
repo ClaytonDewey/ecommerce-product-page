@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import styled from 'styled-components';
 
 type ButtonProps = {
+  icon?: ReactElement;
   text: string;
 };
 
@@ -20,6 +21,7 @@ const StyledButton = styled.button`
 
   svg {
     fill: white;
+    stroke: white;
   }
 
   img {
@@ -27,7 +29,13 @@ const StyledButton = styled.button`
   }
 `;
 
-const Button: React.FC<ButtonProps> = ({ text }) => {
-  return <StyledButton>{text}</StyledButton>;
+const Button: React.FC<ButtonProps> = ({ text, icon }) => {
+  return (
+    <StyledButton>
+      <>
+        {icon} {text}
+      </>
+    </StyledButton>
+  );
 };
 export default Button;
