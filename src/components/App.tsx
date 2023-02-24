@@ -1,4 +1,7 @@
 import React from 'react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
 import Navbar from './Navbar';
 import Container from './Container';
 import ImageSlider from './ImageSlider';
